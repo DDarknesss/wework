@@ -18,7 +18,7 @@
     <!-- jQuery first, then Bootstrap JS -->
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script defer src="./main.js"></script>
     
     <title>WeWork.</title>
 </head>
@@ -27,7 +27,7 @@
 
     <header>
 
-        <div class="whitetext  back d-flex">
+        <div class="main d-flex" id="main">
             <div class="container align-self-center ">
                 <div class="text-center joomag-wework">
                     <picture>
@@ -48,19 +48,18 @@
         </div>
     </header>
 
-    <!--- PARTNERS -->
+    <!--- PARTNERS --> 
  
- 
-   <div class="container partners ">
+   <div class="container partners" id="partners">
         <div class="row text-center">
-             <div class="col-lg-12 col-md-12 col-sm-12 ">
+             <div class="col-sm-12 ">
                 <p>Trusted by 500,000+ businesses worldwide</p>
             </div>
         </div>
-        <div class="row logos  ">
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-around">
+        <div class="row logos">
+            <div class="col-sm-12 d-flex justify-content-around">
                 <span >
-                    <img src="./image/Assets/walmart.svg" alt="d"/>
+                    <img src="./image/Assets/walmart.svg" alt="d" id="partner1"/>
                 </span>
                 <span >
                     <img src="./image/Assets/bbb.svg" alt="d"/>
@@ -78,27 +77,117 @@
         </div>
     </div>
 
-
     <!--- OFFER -->
 
-    <div class="container-fluid whitetext" id="offer">
+    <div class="container-fluid  d-flex flex-column align-items-center justify-content-center" id="offer">
         
-        <div class="row text-center">
-            <div class="col-lg-12 col-md-12 col-sm-12" >
-                <h3>Exclusive WeWork Offer</h3>
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-12" >
+                    <h3>Exclusive WeWork Offer</h3>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-12 offertext " >
+                    <p>It's easy to create anything when you have options. Start from scratch, choose from over 300
+                        masterfully designed templates, or upload a PDF file to get started.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <form class="form-inline">
+                    <div class="col-sm-12 input-group mx-sm-3 mb-2 exclusive-offer">
+                        <input type="email" class="form-control" placeholder="Your Work Email">
+                        <div>
+                            <button type="submit" class="rotation btn btn-primary mb-2 input-group-append">Join Joomag for Free</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+    </div>
+
+    <!--- FEATURES -->
+    
+    <div class="container" id="features">
+       
+        <div class="row feature-image"> 
+            <div class="col-md-6 col-sm-12">
+                <img src="./image/Assets/creation.svg" alt="d">
+            </div>
+            <div class="col-md-6 col-sm-12 desc">
+                <h4> Creation</h4>
+                <p>It's easy to create anything when you have options.
+                    Start from scratch, choose from over 300
+                    masterfully designed templates, or upload a PDF 
+                    file to get started.</p>
             </div>
         </div>
 
-        <div class="row text-center">
-            <div class="col-lg-12 col-md-12 col-sm-12 offertext " >
-                <p>It's easy to create anything when you have options. Start from scratch, choose from over 300
-                    masterfully designed templates, or upload a PDF file to get started.</p>
+        <div class="row feature-image-right ">
+            <div class="col-md-6 col-sm-12 desc">
+                <h4> Lead Generation</h4>
+                <p>Keep the sales process moving and use
+                our powerful tools to generate more qualified leads.</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12 ">
+                <img src="./image/Assets/lead-generation.svg" alt="d">
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row feature-image"> 
+            <div class="col-md-6 col-sm-12 ">
+                <img src="./image/Assets/collaboration.svg" alt="d">
+            </div>
+            <div class="col-md-6 col-sm-12 desc">
+                <h4> Collaboration </h4>
+                <p> Work towards a common goal and let every 
+                    employee access your interactive content</p>
+            </div>
+        </div>
+
+        <div class="row feature-image-right">
+            <div class="col-md-6 col-sm-12 desc">
+                <h4> Distribution</h4>
+                <p>Web, mobile, desktop, social media, 
+                    mobile apps - use them all (and more) 
+                    to inflate your content's visibility with
+                    Joomag.</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12 ">
+                <img src="./image/Assets/distribution.svg" alt="d">
+            </div>
+        </div>
+
+        <div class="row feature-image "> 
+            <div class="col-md-6 col-sm-12 ">
+                <img src="./image/Assets/analytics.svg" alt="d">
+            </div>
+            <div class="col-md-6 col-sm-12 desc">
+                <h4> Analytics </h4>
+                <p> Are readers engaged with your content? 
+                    Where are they accessing it from? And which 
+                    sources are driving the most traffic? Get these
+                    questions (and more) answered with Joomag's 
+                    comprehensive analytics.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center " id="offerLast" style="margin-bottom: 0">
+        <div class="row text-center">
+            <div class="col-sm-12" id="second">
+                <p>Work hard, save hard. All WeWork members will receive an exclusive 30% discount when enrolling
+                in a Joomag Business plan.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center offerForm">
             <form class="form-inline">
-                <div class=" col-lg-12 col-md-12 col-sm-12 input-group mx-sm-3 mb-2 ">
+                <div class="col-sm-12 input-group mx-sm-3 mb-2 exclusive-offer">
                     <input type="email" class="form-control hidden-lg hidden-md hidden-sm" placeholder="Your Work Email">
                     <div>
                         <button type="submit" class="btn btn-primary mb-2 input-group-append">Join Joomag for Free</button>
@@ -107,91 +196,11 @@
             </form>
         </div>
 
-    </div>
-
-
-    <!--- FEATURES -->
-    
-    <div class="container text-center " id="features">
-       
-        <div class="row justify-content-center"> 
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="./image/Assets/creation.svg" alt="d">
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                <h4> Creation</h4>
-                <p>It's easy to create anything when you have options. Start from scratch, choose from over 300
-                masterfully designed templates, or upload a PDF file to get started.</p>
+        <div class="row text-center">
+            <div class="col-sm-12" id="second">
+                <p> * Only WeWork members. 1st year only.</p>
             </div>
         </div>
-
-        <div class="row ">
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                <h4> Lead Generation</h4>
-                <p>Keep the sales process moving and use
-                our powerful tools to generate more qualified leads.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="./image/Assets/lead-generation.svg" alt="d">
-            </div>
-        </div>
-
-        <div class="row "> 
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="./image/Assets/collaboration.svg" alt="d">
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                <h4> Collaboration </h4>
-                <p> Work towards a common goal and let every employee access your interactive content</p>
-            </div>
-        </div>
-
-        <div class="row ">
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                <h4> Distribution</h4>
-                <p>Web, mobile, desktop, social media, mobile apps - use them all (and more) to inflate your
-                content's visibility with Joomag.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="./image/Assets/distribution.svg" alt="d">
-            </div>
-        </div>
-
-        <div class="row "> 
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="./image/Assets/analytics.svg" alt="d">
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                <h4> Analytics </h4>
-                <p> Are readers engaged with your content? Where are they accessing it from? And which sources are
-                    driving the most traffic? Get these questions (and more) answered with Joomag's comprehensive
-                    analytics.</p>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="container-fluid whitetext" id="offerLast">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12" id="second">
-                <p>Work hard, save hard. All WeWork members will receive an exclusive 30% discount when enrolling
-                in a Joomag Business plan.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12" id="second">
-                <p> Your Work Email | Try Joomag for Free</p>
-            </div>
-        </div>
-
-        <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12" id="second">
-                    <p> * Only WeWork members. 1st year only.</p>
-                </div>
-            </div>
     </div>
 
 </body>

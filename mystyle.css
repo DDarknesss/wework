@@ -1,4 +1,122 @@
-d-flex 
-flex-column
-align-items-center
-justify-content-center
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main{
+    background: #1E075F;
+    color: white;
+  }
+  
+  .container-fluid{
+    color: white;
+  }
+  
+  .joomag-wework{
+    padding: 95px 0 95px 0;
+  }
+  
+  .joomag-wework img{
+    width: 120px;
+  }
+  
+  .maintext{
+    margin: 50px 0 35px 0;
+  }
+  
+  .partners{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+  }
+  
+  .logos img{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .logos span{
+    margin-top: 50px;
+    background: #E9E9E9;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+
+  #offer{
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: 590px;
+    transform: skewY(-5deg);
+  }
+  
+  #offer::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background: linear-gradient(45deg, #29116d, #5c4789), url("/image/Assets/image-we-work.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  
+  
+  .row.justify-content-center.text-center {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(4deg);
+}
+  
+  .offertext{
+    margin: 35px 0 35px 0;
+  }
+  
+  #features{
+    padding-top: 100px;
+  }
+  
+  #features .row{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+  }
+  
+  #features img{
+    max-width: 300px;
+  }
+  
+  .container-fluid {
+    margin-bottom: 100px;
+  }
+  
+  #offerLast{
+    background: linear-gradient(175deg, #ffffff 21%, #5c4789 5%, #5c4789 90%);
+    background-size: cover;
+    height: 500px;
+  }
+
+  .offerForm{
+    margin: 35px 0 35px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .feature-image-right{
+      flex-direction: column-reverse;
+    }
+    .feature-image{
+      flex-direction: column;
+    }
+    .exclusive-offer{
+      flex-direction: column;
+    }
+    .input-group>.form-control{
+      width: 100%;
+    }
+    .exclusive-offer div button{
+      width: 100%; 
+    }
+  }
